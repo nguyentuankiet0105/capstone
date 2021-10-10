@@ -1,0 +1,85 @@
+.Footer {
+  width: 100%;
+  background-color: #324F72;
+  color: white;
+
+  &__SignUpNews {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    padding-top: 85px;
+    &--title {
+      flex-basis: 50%;
+      h2 {
+        color: white;
+        font-weight: 500;
+        font-size: 38px;
+        margin-bottom: 18px;
+      }
+      p {
+        font-weight: 300;
+        font-size: 16px;
+      }
+    }
+    &--form {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-basis: 50%;
+      .input--email {
+        padding: 13px;
+        width: 390px;
+      }
+      .btn--subscribe {
+        margin-left: 25px;
+        height: 50px;
+        width: 150px;
+        font-weight: 600;
+        background-color: #82B21C;
+      }
+    }
+  }
+
+  &__information {
+    padding: 29px 0 36px 0;
+    display: flex;
+    gap: 0 78px;
+    justify-content: space-between;
+    border-bottom: 1px solid $gray;
+    .wrap__title {
+      margin-bottom: 60px;
+    }
+    h2 {
+      color: $gray;
+      font-weight: 700;
+    }
+    li {
+      margin-bottom: 2em;
+      transition: all 0.2s ease-in;
+    }
+    li:hover {
+      cursor: pointer;
+      color: $gray;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    color: $gray;
+    &--socialNetwork {
+      font-size: 24px;
+      .iconFacebook {
+        margin-right: 12px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .iconInstagram:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
