@@ -1,13 +1,15 @@
 .Footer {
   width: 100%;
-  background-color: #324F72;
+  background-color: #FDFEFD;
   color: white;
-
+  background-image: linear-gradient(to bottom, rgba(134, 133, 133, 0.6) 0%,rgba(0, 0, 0, 0.6) 100%), url("../Assets/Login/gif.gif");
+  background-repeat: no-repeat;
+  
   &__SignUpNews {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-    padding-top: 85px;
+      padding-top: 40px;
     &--title {
       flex-basis: 50%;
       h2 {
@@ -35,7 +37,12 @@
         height: 50px;
         width: 150px;
         font-weight: 600;
-        background-color: #82B21C;
+        border: none;
+        background-color: #FF6584;
+      }
+      .btn--subscribe:hover{
+        background-color: #fc6e8a;
+        border: 0.5px solid ;
       }
     }
   }
@@ -48,10 +55,11 @@
     border-bottom: 1px solid $gray;
     .wrap__title {
       margin-bottom: 60px;
+      
     }
     h2 {
-      color: $gray;
-      font-weight: 700;
+      color: white;
+      font-weight: 530;
     }
     li {
       margin-bottom: 2em;
@@ -60,6 +68,22 @@
     li:hover {
       cursor: pointer;
       color: $gray;
+    }
+    &--address{
+      ul{
+        list-style-type: none;
+      }
+    }
+    &--about{
+      ul{
+        list-style-type: none;
+      }
+    }
+    &--founder{
+      width: 200px;
+      img{
+        width: 100%;
+      }
     }
   }
 

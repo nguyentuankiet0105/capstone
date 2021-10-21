@@ -1,9 +1,19 @@
 import React from 'react';
+import Login from './LoginBox/Login';
+import Register from './LoginBox/Register';
+import { Route, Switch } from 'react-router-dom';
 
 const Body = () => {
   return (
     <>
-      <h1>Body</h1>
+      <Switch>
+        <Route path="/News/login">
+          <Login />
+        </Route>
+        <Route path="/News/register">
+          <Register />
+        </Route>
+      </Switch>
     </>
   );
 };
