@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'antd';
+import UserInfo from "./UserInfo"
 
 const HeaderWS = () => {
   return (
@@ -10,6 +11,9 @@ const HeaderWS = () => {
         <Link to="/News">
           <Button>Back to Home</Button>
         </Link>
+        <div className="headerWS__userinfo">
+        <UserInfo />
+        </div>
       </div>
     </div>
   );

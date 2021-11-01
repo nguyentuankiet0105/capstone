@@ -1,11 +1,13 @@
 .homestudent{
   width: 100%;
-  height: 810px;
+  min-height: 125vh;
+  max-height: fit-content;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#8be8cf));
   .sidenav{
-    margin-top: 78px;
-    height: 732px;
-    background-color: rgba(0,0,0,0.46);
+    margin-top: 75px;
+    margin-left: -11px;
+    height: 739px;
+    background-color: rgba(0,0,0,0.7);
     &__icon{
       font-size: 1.85em; 
       margin-top: 10px;
@@ -21,4 +23,9 @@
   width: 100%;
   height: 76px;
   border-bottom: 1px solid rgba(0,0,0,0.46);
+  &__userinfo{
+    width: 25%;
+    float: right;
+    margin-top: -40px;
+  }
 }

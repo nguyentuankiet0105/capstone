@@ -11,19 +11,19 @@ const Home = () => {
   return (
     <>
       <Switch>
-        <Route path="/News">
+        <Route path='/student-workspace'>
+          <HomeStudent/>
+        </Route>
+        <Route  path='/teacher-workspace'>
+          <HomeTeacher/>
+        </Route>
+        <Route path='/notfound'>
+          <NotFound/>
+        </Route>
+        <Route path="/">
           <Header />
           <Body />
           <Footer />
-        </Route>
-        <Route exact path='/student-workspace'>
-          <HomeStudent/>
-        </Route>
-        <Route exact path='/teacher-workspace'>
-          <HomeTeacher/>
-        </Route>
-        <Route exact path='/'>
-          <NotFound/>
         </Route>
       </Switch>
     </>

@@ -10,36 +10,45 @@ import {
 import register from '../../../Assets/Login/register_2.svg';
 import React from 'react';
 import { useHistory, Link } from 'react-router-dom';
+import firebase, { auth, db } from '../../../firebase/config';
+import { addDocument, generateKeywords } from '../../../firebase/services';
 
+const fbProvider = new firebase.auth.FacebookAuthProvider();
+const googleProvider = new firebase.auth.GoogleAuthProvider();
 
 const Login = () => {
+  const history = useHistory();
+
+  const handleLogin = async (fbProvider) => {
+    const {additionalUserInfo, user} = await auth.signInWithPopup(fbProvider);
+    if(additionalUserInfo?.isNewUser){
+      addDocument('users', {
+        displayName: user.displayName,
+        email: user.email,
+        photoURL: user.photoURL,
+        uid: user.displayName,
+        providerId: additionalUserInfo.providerId
+      })
+    }
+  };
+
   const [loginForm, setLoginForm] = React.useState({
     username: '',
     password: '',
   });
   const { username, password } = loginForm;
-
-  const onChangeLoginFomr = (e) => 
-  setLoginForm({...loginForm, [e.target.value]: e.target.value});
-
-  const history = useHistory();
-
+  const onChangeLoginForm = (e) => setLoginForm({ ...loginForm, [e.target.value]: e.target.value });
   const onFinish = (values) => {
     console.log('Received values of form: ', values);
-    if(values.username === "student@gmail.com")
-    {
+    if (values.username === 'student@gmail.com') {
       alert('success student login');
       history.push('/student-workspace');
-    }
-    else if(values.username === "teacher@gmail.com")
-    {
+    } else if (values.username === 'teacher@gmail.com') {
       alert('success teacher login');
       history.push('/teacher-workspace');
-    }
-    else{
+    } else {
       alert('username or password incorrect');
     }
-    
   };
 
   return (
@@ -64,7 +73,7 @@ const Login = () => {
               className="login__form--ipn"
               name="username"
               value={username}
-              onChange={onChangeLoginFomr}
+              onChange={onChangeLoginForm}
               rules={[
                 {
                   required: true,
@@ -83,7 +92,7 @@ const Login = () => {
               className="login__form--ipn"
               name="password"
               value={password}
-              onChange={onChangeLoginFomr}
+              onChange={onChangeLoginForm}
               rules={[
                 {
                   required: true,
@@ -120,12 +129,21 @@ const Login = () => {
                     marginLeft: '39%',
                     marginTop: '2%',
                   }}
+                  onClick={() => handleLogin(googleProvider)}
+                  className="login__form--socialbtn"
                 />
-                <FacebookFilled style={{ fontSize: '30px', cursor: 'pointer', marginLeft: '3%' }} />
-                <SkypeFilled style={{ fontSize: '33px', cursor: 'pointer', marginLeft: '3%' }} />
+                <FacebookFilled
+                  style={{ fontSize: '30px', cursor: 'pointer', marginLeft: '3%' }}
+                  onClick={() => handleLogin(fbProvider)}
+                  className="login__form--socialbtn"
+                />
+                <SkypeFilled
+                  style={{ fontSize: '33px', cursor: 'pointer', marginLeft: '3%' }}
+                  className="login__form--socialbtn"
+                />
               </Form.Item>
               <span className="login__form--signup">
-                Or <Link to='/News/register'>register now!</Link>
+                Or <Link to="/register">register now!</Link>
               </span>
             </Form.Item>
           </Form>

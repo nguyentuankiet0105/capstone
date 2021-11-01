@@ -103,7 +103,7 @@ const Login = () => {
               </Button>
             </Form.Item>
             <Link
-              to="/News/login"
+              to="/login"
               style={{ position: 'relative', float: 'right', textDecorationLine: 'underline' }}
             >
               If you have an account, let's sign in now
