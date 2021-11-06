@@ -1,0 +1,156 @@
+[
+    {
+        "email": null,
+        "gender": null,
+        "address": null,
+        "user_id": 21,
+        "birthday": null,
+        "last_name": null,
+        "parent_id": "PAR1",
+        "first_name": "Tiến",
+        "phone_number": "0977618706"
+    },
+    {
+        "email": null,
+        "gender": null,
+        "address": null,
+        "user_id": 30,
+        "birthday": null,
+        "last_name": null,
+        "parent_id": "PAR10",
+        "first_name": "Liên",
+        "phone_number": "0862823410"
+    },
+    {
+        "email": null,
+        "gender": null,
+        "address": null,
+        "user_id": 31,
+        "birthday": null,
+        "last_name": null,
+        "parent_id": "PAR11",
+        "first_name": "Võ",
+        "phone_number": "0968893497"
+    },
+    {
+        "email": null,
+        "gender": null,
+        "address": null,
+        "user_id": 32,
+        "birthday": null,
+        "last_name": null,
+        "parent_id": "PAR12",
+        "first_name": "Hoa",
+        "phone_number": "0366896786"
+    },
+    {
+        "email": null,
+        "gender": null,
+        "address": null,
+        "user_id": 33,
+        "birthday": null,
+        "last_name": null,
+        "parent_id": "PAR13",
+        "first_name": "Hiền",
+        "phone_number": "0397404146"
+    },
+    {
+        "email": null,
+        "gender": null,
+        "address": null,
+        "user_id": 34,
+        "birthday": null,
+        "last_name": null,
+        "parent_id": "PAR14",
+        "first_name": "Thanh",
+        "phone_number": "0364975557"
+    },
+    {
+        "email": null,
+        "gender": null,
+        "address": null,
+        "user_id": 22,
+        "birthday": null,
+        "last_name": null,
+        "parent_id": "PAR2",
+        "first_name": "Tín",
+        "phone_number": "0398484347"
+    },
+    {
+        "email": null,
+        "gender": null,
+        "address": null,
+        "user_id": 23,
+        "birthday": null,
+        "last_name": null,
+        "parent_id": "PAR3",
+        "first_name": "Quang",
+        "phone_number": "0348903699"
+    },
+    {
+        "email": null,
+        "gender": null,
+        "address": null,
+        "user_id": 24,
+        "birthday": null,
+        "last_name": null,
+        "parent_id": "PAR4",
+        "first_name": "Quỳnh",
+        "phone_number": "0345919449"
+    },
+    {
+        "email": null,
+        "gender": null,
+        "address": null,
+        "user_id": 25,
+        "birthday": null,
+        "last_name": null,
+        "parent_id": "PAR5",
+        "first_name": "Liên",
+        "phone_number": "0963085438"
+    },
+    {
+        "email": null,
+        "gender": null,
+        "address": null,
+        "user_id": 26,
+        "birthday": null,
+        "last_name": null,
+        "parent_id": "PAR6",
+        "first_name": "Hóa",
+        "phone_number": "0365655504"
+    },
+    {
+        "email": null,
+        "gender": null,
+        "address": null,
+        "user_id": 27,
+        "birthday": null,
+        "last_name": null,
+        "parent_id": "PAR7",
+        "first_name": "Hiền",
+        "phone_number": "0365655504"
+    },
+    {
+        "email": null,
+        "gender": null,
+        "address": null,
+        "user_id": 28,
+        "birthday": null,
+        "last_name": null,
+        "parent_id": "PAR8",
+        "first_name": "Hòa",
+        "phone_number": "0365655504"
+    },
+    {
+        "email": null,
+        "gender": null,
+        "address": null,
+        "user_id": 29,
+        "birthday": null,
+        "last_name": null,
+        "parent_id": "PAR9",
+        "first_name": "Anh",
+        "phone_number": "0969532978"
+    }
+]
