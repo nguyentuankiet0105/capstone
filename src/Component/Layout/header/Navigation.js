@@ -34,7 +34,7 @@ const Navigation = () => {
           </li>
           <li>
           <Dropdown overlay={RegisterDropdown} placement="bottomCenter" arrow >
-          <Link to="/News/login">Sign In</Link>
+            <Link Link to="/login">Sign In</Link>
           </Dropdown>
           </li>
           <li>
@@ -60,7 +60,7 @@ const Navigation = () => {
           </li>
           <li>
           <Dropdown overlay={RegisterDropdown} placement="bottomCenter" arrow >
-            <Link to="/News/login">Sign In</Link>
+            <Link to="/login">Sign In</Link>
           </Dropdown>
           </li>
           <li>

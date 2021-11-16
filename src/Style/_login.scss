@@ -50,15 +50,11 @@
       margin-right: 18%;
       margin-top: 5%;
     }
-    #gg-btn{
-      width:9%;
-      cursor: pointer;
-      margin-left: 42%;
-      margin-top: 2%;
+    &--socialbtn{
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
-    #fb-btn{
-      cursor: pointer;
-      margin-top: 2%;
+    &--socialbtn:hover{
+      opacity: 0.8;
     }
   }
 }

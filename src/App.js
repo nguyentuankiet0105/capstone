@@ -1,16 +1,24 @@
-import 'antd/dist/antd.css';
-import Home from './Screens/Home';
-import { BrowserRouter as Router } from 'react-router-dom';
-import './App.css';
-import './Style/App.scss';
+import "antd/dist/antd.css";
+import Home from "./Screens/Home";
+import { BrowserRouter as Router } from "react-router-dom";
+import "./App.css";
+import "./Style/App.scss";
+import AuthProvider from "./Context/AuthProvider";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+
+
   return (
     <>
       <Router>
-        <Home />
+        <AuthProvider>
+          <Home />
+        </AuthProvider>
       </Router>
     </>
+  
+
   );
 }
 

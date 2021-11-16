@@ -22,6 +22,7 @@ const Header = () => {
   };
 
   return (
+    
     <div className="header">
       <div className="container wrap--heading">
         <div className="tableHidden ">

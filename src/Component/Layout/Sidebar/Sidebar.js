@@ -1,4 +1,5 @@
 import SideNav, { NavIcon, NavItem, NavText } from '@trendmicro/react-sidenav';
+import { Link } from 'react-router-dom';
 import React from 'react';
 import {
   FaBook,
@@ -26,9 +27,13 @@ const Sidebar = () => {
         <SideNav.Nav defaultSelected="home">
           <NavItem eventKey="home">
             <NavIcon>
-              <FaHouseUser className="sidenav__icon" />
+              <Link to="/student-workspace/home">
+                <FaHouseUser className="sidenav__icon" />
+              </Link>
             </NavIcon>
-            <NavText>Home</NavText>
+            <NavText>
+              <Link to="/student-workspace/home">Home</Link>
+            </NavText>
           </NavItem>
           <NavItem eventKey="profile">
             <NavIcon>
@@ -68,9 +73,13 @@ const Sidebar = () => {
           </NavItem>
           <NavItem eventKey="chatroom">
             <NavIcon>
-              <FaComments style={{ fontSize: '2em', marginTop: '10px' }} />
+              <Link to="/student-workspace/chatroom">
+                <FaComments style={{ fontSize: '2em', marginTop: '10px' }} />
+              </Link>
             </NavIcon>
-            <NavText>Chatroom</NavText>
+            <NavText>
+              <Link to="/student-workspace/chatroom">Chatroom</Link>
+            </NavText>
           </NavItem>
           <NavItem eventKey="teamworking">
             <NavIcon>
